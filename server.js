@@ -58,6 +58,8 @@ function processResponse(userInput, correctAnswer, aiAnswer) {
 
 app.post('/ask-question', async (req, res) => {
 	const { question, correctAnswer } = req.body;
+	console.log('QUESTION', question);
+	console.log('CORRECT ANSWER', correctAnswer);
 	const conversations = {
 		correctAnswer,
 		history: [
