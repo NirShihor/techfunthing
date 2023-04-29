@@ -1,0 +1,32 @@
+.home {
+	position: relative;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(241, 238, 238);
+}
+
+@keyframes btnFadeIn {
+	0% {
+		opacity: 0; /* start with opacity 0 */
+	}
+	100% {
+		opacity: 1; /* end with opacity 1 */
+	}
+}
+
+.startButton {
+	position: absolute;
+	background-image: url('../.././public/images/seal4.png');
+	background-size: cover;
+	border: none;
+	border-radius: 50%;
+	top: 40%;
+	margin-left: -5rem;
+	width: 12rem;
+	height: 12rem;
+	animation-fill-mode: forwards;
+	animation-name: btnFadeIn;
+	animation-duration: 10s;
+	cursor: pointer;
+}

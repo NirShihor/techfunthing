@@ -1,0 +1,39 @@
+.startContainer {
+	opacity: 0;
+	transition: opacity 2s ease-in-out;
+}
+.castle1 {
+	width: 30vw;
+	margin-top: 5rem;
+	z-index: 1;
+	border-radius: 7px;
+}
+
+.riddle {
+	position: re;
+	font-family: 'Fondamento', cursive;
+	text-align: left;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0.5, 1);
+	color: white;
+	align-items: center;
+	margin: auto;
+	margin-top: 10rem;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	max-width: 60vw;
+}
+
+@media screen and (max-width: 1200px) {
+	.riddle {
+		font-size: 1.2rem;
+		max-width: 60vw;
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.riddle {
+		font-size: 1.2rem;
+		max-width: 40vw;
+	}
+}

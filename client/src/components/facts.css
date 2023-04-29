@@ -1,0 +1,34 @@
+* {
+	text-align: center;
+	font-family: 'Fondamento', cursive;
+}
+
+.factsHeading {
+	font-size: 2.5rem;
+	margin: 0 auto;
+	padding: 0.5rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.factsText {
+	max-width: 50vh;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+}
+
+.imageContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 70vw;
+	height: 40vh;
+	margin: auto;
+}
+
+.factsImage {
+	float: left;
+	width: 100%;
+	height: 100%;
+}

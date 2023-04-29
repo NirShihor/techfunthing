@@ -1,0 +1,23 @@
+.pageContainer {
+	font-family: 'Fondamento', cursive;
+	text-align: center;
+	align-items: center;
+	background-color: #edeae5;
+}
+
+.pageContainer h1 {
+	margin-top: 3rem;
+}
+
+.pageContainer h2 {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.map {
+	background-image: url('../assets/staticMap.png');
+	background-size: cover;
+	width: 60vw;
+	height: 90vh;
+	margin: 3rem auto;
+}

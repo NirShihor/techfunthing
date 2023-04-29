@@ -1,0 +1,217 @@
+.questionInput,
+.askBtn {
+	font-family: 'Fondamento', cursive;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+}
+
+.questionInput {
+	border-radius: 5px 0px 0px 5px;
+	border: none;
+	border: solid 2px black;
+	min-width: 30vw;
+}
+
+.askBtn {
+	border-radius: 0px 5px 5px 0px;
+	border: solid black;
+	border-width: 2px 2px 2px 0px;
+	background-color: grey;
+}
+
+.answer {
+	margin: 2rem auto;
+	font-family: 'Fondamento', cursive;
+	max-width: 70vw;
+	font-size: 2rem;
+	align-items: center;
+	text-align: center;
+	opacity: 0;
+}
+
+@media screen and (max-width: 1200px) {
+	.answer {
+		font-size: 1.1rem;
+	}
+	.questionInput {
+		font-size: 1.2rem;
+	}
+	.askBtn {
+		font-size: 1.2rem;
+	}
+}
+
+.answer-animation {
+	animation-name: answerFadeInOut;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes answerFadeInOut {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.openModalBtn {
+	position: absolute;
+	color: transparent;
+	background-color: transparent;
+	background-image: url('.././assets/scottishCompass.png');
+	background-size: cover;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+	border: none;
+	right: 1.5rem;
+	top: 0.5rem;
+}
+
+.questionForm {
+	text-align: center;
+	flex-direction: row;
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.fade-out {
+	animation: fadeOut 1s ease forwards;
+}
+
+.letterBoxBtn {
+	position: absolute;
+	border: none;
+	height: 10rem;
+	width: 15rem;
+	right: 10rem;
+	top: -1rem;
+	background-image: url('.././assets/chest.png');
+	background-color: transparent;
+	background-size: cover;
+	/* border: none; */
+}
+
+.letterBoxContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('.././assets/treasure_background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000; /* Make sure it's on top of other elements */
+}
+
+.letterButtonsContainer {
+	display: flex;
+	margin-top: 6rem;
+	margin-left: 3rem;
+}
+
+.letterButtonsContainer div {
+	width: 2rem;
+	font-family: 'Fondamento', cursive;
+	font-size: 1.5rem;
+}
+
+.letterBox {
+	display: flex;
+	align-items: center;
+	margin-top: 0rem;
+	padding-left: 2rem;
+	justify-content: center;
+	background-image: url('.././assets/parchment2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-width: 40rem;
+	height: 30rem;
+}
+
+.letterContainer {
+	position: relative;
+	margin: 0.5rem;
+	text-align: center;
+	align-items: center;
+	display: inline-block;
+	width: 3rem;
+	height: auto;
+}
+
+.letter {
+	font-size: 2rem;
+	font-family: 'Fondamento', cursive;
+	animation: type 0.7s steps(60, end);
+}
+
+@keyframes type {
+	from {
+		width: 0;
+	}
+}
+
+.closeButton {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	border: none;
+	background-color: salmon;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+}
+
+.emptyDropZone {
+	min-width: 30px;
+	min-height: 30px;
+}
+
+.deleteArea {
+	background-image: url('.././assets/barrel.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin-top: -3rem;
+	margin-left: 2rem;
+	height: 280px;
+	width: 250px;
+	font-family: 'Fondamento', cursive;
+}
+
+.draggable-letter {
+	cursor: grab;
+}
+
+.draggable-letter:active {
+	cursor: grabbing;
+}
+
+.drop-zone {
+	display: inline-block;
+	width: 10px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.1);
+	text-decoration: underline;
+}
