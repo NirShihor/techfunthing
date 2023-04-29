@@ -191,8 +191,14 @@ const QuestionForm = ({
 			setQuestion('');
 		}, 3000);
 
+		let questionUrl = '';
+		if (process.env.ENV === 'production') {
+			questionUrl = '/ask-question';
+		} else {
+			questionUrl = `${apiURL}/ask-question`;
+		}
 		try {
-			const response = await axios.post(`${apiURL}/ask-question`, {
+			const response = await axios.post(questionUrl, {
 				question,
 				correctAnswer,
 			});

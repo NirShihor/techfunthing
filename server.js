@@ -19,10 +19,11 @@ dotenv.config();
 
 const corsOptions = {
 	origin:
-		process.env.NODE_ENV === 'production'
+		process.env.ENV === 'production'
 			? process.env.CLIENT_URL
 			: 'http://localhost:3000',
 	optionsSuccessStatus: 200,
+	credentials: true,
 };
 
 app.use(cors(corsOptions));
@@ -56,10 +57,8 @@ function processResponse(userInput, correctAnswer, aiAnswer) {
 	}
 }
 
-app.post('/ask-question', async (req, res) => {
+app.post(`/ask-question`, async (req, res) => {
 	const { question, correctAnswer } = req.body;
-	console.log('QUESTION', question);
-	console.log('CORRECT ANSWER', correctAnswer);
 	const conversations = {
 		correctAnswer,
 		history: [
