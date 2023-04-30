@@ -16,8 +16,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 const apiURL = process.env.REACT_APP_API_URL;
 
-console.log(process.env.apiURL);
-
 const QuestionForm = ({
 	children,
 	correctAnswer,
@@ -191,14 +189,8 @@ const QuestionForm = ({
 			setQuestion('');
 		}, 3000);
 
-		let questionUrl = '';
-		if (process.env.ENV === 'production') {
-			questionUrl = '/ask-question';
-		} else {
-			questionUrl = `${apiURL}/ask-question`;
-		}
 		try {
-			const response = await axios.post(questionUrl, {
+			const response = await axios.post(`${apiURL}/ask-question`, {
 				question,
 				correctAnswer,
 			});
