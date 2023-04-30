@@ -14,7 +14,12 @@ import mapScotland from '../assets/mapScotland.png';
 import Particles from './Particles';
 import { v4 as uuidv4 } from 'uuid';
 
-const apiURL = process.env.REACT_APP_API_URL;
+let apiURL;
+if (process.env.NODE_ENV !== 'production') {
+	apiURL = process.env.REACT_APP_API_URL;
+} else {
+	apiURL = '';
+}
 
 const QuestionForm = ({
 	children,
