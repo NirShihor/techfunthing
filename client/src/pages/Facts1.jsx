@@ -3,7 +3,9 @@ import './facts1.css';
 
 const Facts1 = () => {
 	return (
-		<h1>Facts</h1>
+		<h1 style={{ textAlign: 'center', marginTop: '5rem' }}>
+			Fantastic - You Did It!!!
+		</h1>
 		// <Fade left big cascade>
 		// 	<div className='pageContainer'>
 		// 		<h1>You Made It !!!</h1>
