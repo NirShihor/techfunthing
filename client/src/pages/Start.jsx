@@ -1,8 +1,5 @@
 import Riddle from '../components/Riddle';
 
-const answer = 'Stirling Castle';
-const encodedAnswer = Buffer.from(answer).toString('base64');
-
 const Start = () => {
 	return (
 		<Riddle
@@ -22,7 +19,7 @@ const Start = () => {
 		But once you arrive at, ought not to forget, take seventh of
 		symbols for the first one to get. There are seven in all, and once you possess, 
 		that final location, you'll be able to guess."
-			correctAnswer={encodedAnswer}
+			correctAnswer='Stirling Castle'
 			nextStep='/step2'
 		/>
 	);
