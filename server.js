@@ -57,12 +57,7 @@ function processResponse(userInput, correctAnswer, aiAnswer) {
 }
 
 app.post(`/ask-question`, async (req, res) => {
-	let correctAnswer = '';
-	// const { question, correctAnswer } = req.body;
-	if (url.includes('start')) {
-		correctAnswer = process.env.ANSWER_START;
-	}
-	const { question } = req.body;
+	const { question, correctAnswer } = req.body;
 	const conversations = {
 		correctAnswer,
 		history: [
