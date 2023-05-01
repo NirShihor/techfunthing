@@ -21,7 +21,7 @@ const corsOptions = {
 	origin:
 		process.env.ENV === 'production'
 			? process.env.CLIENT_URL
-			: 'http://localhost:3000',
+			: 'http://localhost:3001',
 	optionsSuccessStatus: 200,
 };
 
@@ -57,7 +57,12 @@ function processResponse(userInput, correctAnswer, aiAnswer) {
 }
 
 app.post(`/ask-question`, async (req, res) => {
-	const { question, correctAnswer } = req.body;
+	let correctAnswer = '';
+	// const { question, correctAnswer } = req.body;
+	if (url.includes('start')) {
+		correctAnswer = process.env.ANSWER_START;
+	}
+	const { question } = req.body;
 	const conversations = {
 		correctAnswer,
 		history: [
@@ -162,6 +167,7 @@ app.post(`/ask-question`, async (req, res) => {
 		});
 
 		aiAnswer = response.data.choices[0].message.content;
+
 		const processedAnswer = processResponse(question, correctAnswer, aiAnswer);
 
 		// Store the response in the cache
