@@ -19,7 +19,7 @@ const Start = () => {
 		But once you arrive at, ought not to forget, take seventh of
 		symbols for the first one to get. There are seven in all, and once you possess, 
 		that final location, you'll be able to guess."
-			correctAnswer='Xtirling Castle'
+			correctAnswer='Stirling Castle'
 			nextStep='/step2'
 		/>
 	);
