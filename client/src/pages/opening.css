@@ -140,7 +140,7 @@
 	animation-fill-mode: forwards;
 	animation-name: btnFadeIn;
 	animation-duration: 10s;
-	/* !CHANGE BACK TO 120 BELOW TO PLAY */
-	animation-delay: 100s;
+	/* !CHANGE BACK TO 80 BELOW TO PLAY */
+	animation-delay: 80s;
 	z-index: 2;
 }
