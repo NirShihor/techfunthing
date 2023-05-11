@@ -295,7 +295,7 @@ const QuestionForm = ({
 	};
 
 	useEffect(() => {
-		const specificString = 'ROSLLYN';
+		const specificString = 'ROSSLYN';
 		const currentLettersString = letters.map((l) => l.letter).join('');
 
 		if (currentLettersString === specificString) {

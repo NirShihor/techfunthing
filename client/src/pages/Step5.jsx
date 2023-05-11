@@ -6,7 +6,7 @@ const Step5 = () => {
 			riddleText="Romani built a fort, its people to protect,
 			in Bochatle, just nearby, they say this is a fact.
 			From where you stand there still, the castle you have found,
-			slice through that place streight east, 
+			slice through that place straight east, 
 			small loch, in fife, near town.
 			The Picts they called it 'flood', and that's the name that stuck, 
 			the English thought they had it, till William Wallace struck.

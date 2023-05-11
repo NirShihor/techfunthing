@@ -12,7 +12,7 @@ const Step4 = () => {
 			Once upon the seat of son of knight, 
 			Lord of Menstrie and Sauchie and possessor of might,
 			that's where you go, you're now getting better,
-,			use title last one to hold the fourth of thy letter."
+			use title fifth one to hold the fourth of thy letter."
 			correctAnswer='Innis Chonnel Castle'
 			nextStep='/step5'
 		/>

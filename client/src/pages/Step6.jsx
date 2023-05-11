@@ -4,7 +4,7 @@ const Step6 = () => {
 	return (
 		<Riddle
 			riddleText="
-        From where you stand,look straight near north, 
+        From where you stand, look straight near north, 
         to ancient gathering of picts,
         where son of lion was given force,
         and Kenneth in its midst. 
