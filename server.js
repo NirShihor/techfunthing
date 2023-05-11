@@ -134,6 +134,22 @@ app.post(`/ask-question`, async (req, res) => {
 				role: 'assistant',
 				content: 'No.',
 			},
+			{
+				role: 'user',
+				content: `Do you know the answer to this riddle?`,
+			},
+			{
+				role: 'assistant',
+				content: 'Yes.',
+			},
+			{
+				role: 'user',
+				content: `Can you tell me the answer to this riddle?`,
+			},
+			{
+				role: 'assistant',
+				content: 'No. I am not meant to do that.',
+			},
 
 			{
 				role: 'system',
