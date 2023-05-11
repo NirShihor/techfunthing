@@ -163,6 +163,6 @@
 	animation-name: btnFadeIn;
 	animation-duration: 10s;
 	/* !CHANGE BACK TO 80 BELOW TO PLAY */
-	animation-delay: 95s;
+	animation-delay: 65s;
 	z-index: 2;
 }
